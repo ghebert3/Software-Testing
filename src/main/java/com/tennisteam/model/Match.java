@@ -11,7 +11,7 @@ public class Match {
     private String scoreA;
     private String scoreB;
 
-    public Match(LocalDate date, String teamA, String teamB, String playerA, String playerB, String scoreA, String scoreB) {
+    public Match(String teamA, String teamB) {
         this.date = date;
         this.teamA = teamA;
         this.teamB = teamB;

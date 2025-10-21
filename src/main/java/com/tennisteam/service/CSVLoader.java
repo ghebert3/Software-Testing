@@ -15,7 +15,7 @@ public class CSVLoader {
             for (String line : lines.subList(1, lines.size())) {
                 String[] parts = line.split(",");
                 LocalDate date = LocalDate.parse(parts[0]);
-                matches.add(new Match(date, parts[1], parts[2], parts[3], parts[4], parts[5], parts[6]));
+                matches.add(new Match(parts[1], parts[2]));
             }
         } catch (IOException e) {
             e.printStackTrace();
